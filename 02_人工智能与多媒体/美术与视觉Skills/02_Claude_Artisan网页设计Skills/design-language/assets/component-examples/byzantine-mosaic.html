@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Byzantine Mosaic — component example</title>
+<!-- Import the one starter theme; that's ~80% of the look. -->
+<link rel="stylesheet" href="../starter-themes/byzantine-mosaic.css">
+<style>
+  .wrap { max-width: 880px; margin: 0 auto; padding: var(--space-16) var(--space-6); display: grid; gap: var(--space-8); }
+  h1 { font: 600 var(--text-4xl)/1.1 var(--font-display); margin: 0; color: var(--color-primary); }
+  p.lede { color: var(--color-text-muted); font-size: var(--text-lg); margin: 0; max-width: 54ch; }
+  .row { display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); }
+  .card h3 { margin: 0 0 var(--space-2); font: 600 var(--text-xl) var(--font-display); color: var(--color-primary); }
+  .card p { margin: 0; color: var(--color-text-muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <strong style="margin-right:auto; font-family:var(--font-display); letter-spacing:.06em; color:var(--color-primary);">BASILICA OF SAN VITALE</strong>
+      <a href="#" style="color:var(--color-text);text-decoration:none">Nave</a>
+      <a href="#" style="color:var(--color-text-muted);text-decoration:none">Apse</a>
+      <button class="btn btn--primary">Light a candle</button>
+    </nav>
+
+    <header>
+      <h1>Every tile catches the light at its own angle.</h1>
+      <p class="lede">Emperor and empress stand frontal and unmoving in glass and gold, ringed by
+        tessellated borders that have held their shimmer since before the first crusade.</p>
+    </header>
+
+    <div class="row">
+      <button class="btn btn--primary">View the apse</button>
+      <button class="btn">Read the inscription</button>
+      <button class="btn" disabled>Sanctuary closed</button>
+      <span class="badge">☨ Consecrated</span>
+    </div>
+
+    <input class="input" placeholder="leave a votive offering">
+
+    <div class="grid">
+      <article class="card">
+        <h3>Emerald ground</h3>
+        <p>A field of jade-green tesserae surrounds the procession of saints, each tile set at a slight tilt to the flame.</p>
+      </article>
+      <article class="card">
+        <h3>Gold sky</h3>
+        <p>Above every figure, the ceiling dissolves into unbroken shimmering gold — no horizon, only radiance.</p>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

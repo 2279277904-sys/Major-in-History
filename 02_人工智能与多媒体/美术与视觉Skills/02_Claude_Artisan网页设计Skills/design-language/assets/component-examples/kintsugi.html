@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kintsugi — component example</title>
+<!-- Import the one starter theme; that's ~80% of the look. -->
+<link rel="stylesheet" href="../starter-themes/kintsugi.css">
+<style>
+  .wrap { max-width: 880px; margin: 0 auto; padding: var(--space-16) var(--space-6); display: grid; gap: var(--space-8); }
+  h1 { font: 600 var(--text-4xl)/1.1 var(--font-display); margin: 0; color: var(--color-text); }
+  p.lede { color: var(--color-text-muted); font-size: var(--text-lg); margin: 0; max-width: 54ch; }
+  .row { display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); }
+  .card h3 { margin: 0 0 var(--space-2); font: 600 var(--text-xl) var(--font-display); color: var(--color-primary); }
+  .card p { margin: 0; color: var(--color-text-muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <strong style="margin-right:auto; font-family:var(--font-display); letter-spacing:.04em;">KINTSUGI WORKSHOP — 金継ぎ</strong>
+      <a href="#" style="color:var(--color-text);text-decoration:none">Repairs</a>
+      <a href="#" style="color:var(--color-text-muted);text-decoration:none">Lacquer Notes</a>
+      <button class="btn btn--primary">Book a repair</button>
+    </nav>
+
+    <header>
+      <h1>The break becomes the most beautiful part.</h1>
+      <p class="lede">Bring us your broken bowl. We mend the fracture with urushi lacquer dusted in gold —
+        not to hide what happened, but to make the mending visible, and worth keeping.</p>
+    </header>
+
+    <div class="row">
+      <button class="btn btn--primary">Start a repair</button>
+      <button class="btn">Browse the gallery</button>
+      <button class="btn" disabled>Fully booked this month</button>
+      <span class="badge">est. 1487</span>
+    </div>
+
+    <input class="input" placeholder="describe the break">
+
+    <div class="grid">
+      <article class="card">
+        <h3>The Tea Bowl</h3>
+        <p>Five fragments, one gold seam running like a river across the glaze — repaired, not replaced.</p>
+      </article>
+      <article class="card">
+        <h3>The Sake Flask</h3>
+        <p>A single hairline crack from base to lip, now a bright thread of gold catching the lamplight.</p>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

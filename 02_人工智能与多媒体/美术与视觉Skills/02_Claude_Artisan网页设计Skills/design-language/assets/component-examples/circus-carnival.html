@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Circus / Carnival Poster — component example</title>
+<!-- Import the one starter theme; that's ~80% of the look. -->
+<link rel="stylesheet" href="../starter-themes/circus-carnival.css">
+<style>
+  .wrap { max-width: 880px; margin: 0 auto; padding: var(--space-16) var(--space-6); display: grid; gap: var(--space-8); }
+  h1 { font: 700 var(--text-5xl)/0.95 var(--font-display); letter-spacing: .02em; margin: 0; color: var(--color-primary); text-shadow: 2px 2px 0 var(--color-navy); }
+  p.lede { color: var(--color-text-muted); font-size: var(--text-lg); margin: 0; max-width: 54ch; }
+  .row { display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); }
+  .card h3 { margin: 0 0 var(--space-2); font: 700 var(--text-xl) var(--font-display); letter-spacing: .02em; color: var(--color-navy); }
+  .card p { margin: 0; color: var(--color-text-muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <strong style="margin-right:auto; font-family:var(--font-display); font-size:var(--text-xl); letter-spacing:.04em; color:var(--color-primary);">GRAND MIDWAY CO.</strong>
+      <a href="#" style="color:var(--color-text);text-decoration:none">Big Top</a>
+      <a href="#" style="color:var(--color-text-muted);text-decoration:none">Sideshow</a>
+      <button class="btn btn--primary">Buy tickets</button>
+    </nav>
+
+    <header>
+      <h1>STEP RIGHT UP!</h1>
+      <p class="lede">One night only under the big top — daredevils, calliope brass, and a menagerie
+        the likes of which this town has never seen. Doors open at dusk, marvels guaranteed.</p>
+    </header>
+
+    <div class="row">
+      <button class="btn btn--primary">Reserve your seat</button>
+      <button class="btn">See the bill</button>
+      <button class="btn" disabled>House full</button>
+      <span class="badge">★ Amazing!</span>
+    </div>
+
+    <input class="input" placeholder="your name for the guest ledger">
+
+    <div class="grid">
+      <article class="card">
+        <h3>The Flying Marvellos</h3>
+        <p>Four generations of trapeze artists defy gravity forty feet above the sawdust ring.</p>
+      </article>
+      <article class="card">
+        <h3>Professor Quill's Menagerie</h3>
+        <p>Exotic beasts from five continents, tamed and trained, paraded nightly at half past seven.</p>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

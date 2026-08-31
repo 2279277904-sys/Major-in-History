@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amiga Workbench — component example</title>
+<!-- Import the one starter theme; that's ~80% of the look. -->
+<link rel="stylesheet" href="../starter-themes/amiga-workbench.css">
+<style>
+  .wrap { max-width: 880px; margin: 0 auto; padding: var(--space-16) var(--space-6); display: grid; gap: var(--space-8); }
+  h1 { font: 700 var(--text-3xl)/1.3 var(--font-display); margin: 0; color: var(--color-text); }
+  p.lede { color: var(--color-text-muted); font-size: var(--text-base); margin: 0; max-width: 54ch; line-height: 1.6; }
+  .row { display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); }
+  .card h3 { margin: 0 0 var(--space-2); font: 700 var(--text-lg) var(--font-display); color: var(--color-primary); }
+  .card p { margin: 0; color: var(--color-text-muted); font-size: var(--text-sm); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <strong style="margin-right:auto; font-family:var(--font-display);">WORKBENCH 1.3</strong>
+      <a href="#" style="color:#ffffff;text-decoration:none">Disks</a>
+      <a href="#" style="color:#dbe9ff;text-decoration:none">Trash</a>
+      <button class="btn btn--primary">Open Ram Disk:</button>
+    </nav>
+
+    <header>
+      <h1>Four colors. Infinite chunky charm.</h1>
+      <p class="lede">Drag icons across a stippled desktop, snap windows open with a thick beveled
+        border, and never once wonder if the machine is lying to you about what's a button.</p>
+    </header>
+
+    <div class="row">
+      <button class="btn btn--primary">Format Disk</button>
+      <button class="btn">Empty Trash</button>
+      <button class="btn" disabled>Ejecting...</button>
+      <span class="badge">DF0: ready</span>
+    </div>
+
+    <input class="input" placeholder="rename volume...">
+
+    <div class="grid">
+      <article class="card">
+        <h3>System:Utilities/</h3>
+        <p>Sixteen icons, four colors each, drawn at 320×256 and proud of it.</p>
+      </article>
+      <article class="card">
+        <h3>Preferences</h3>
+        <p>Screen depth, pointer speed, and the all-important boot-chime volume knob.</p>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

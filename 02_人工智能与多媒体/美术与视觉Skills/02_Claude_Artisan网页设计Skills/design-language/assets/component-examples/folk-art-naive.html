@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Folk Art / Naive Art — component example</title>
+<!-- Import the one starter theme; that's ~80% of the look. -->
+<link rel="stylesheet" href="../starter-themes/folk-art-naive.css">
+<style>
+  .wrap { max-width: 880px; margin: 0 auto; padding: var(--space-16) var(--space-6); display: grid; gap: var(--space-8); }
+  h1 { font: 700 var(--text-4xl)/1.1 var(--font-display); margin: 0; color: var(--color-outline-ink); }
+  p.lede { color: var(--color-text-muted); font-size: var(--text-lg); margin: 0; max-width: 54ch; }
+  .row { display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); }
+  .card h3 { margin: 0 0 var(--space-2); font: 700 var(--text-xl) var(--font-display); color: var(--color-primary); }
+  .card p { margin: 0; color: var(--color-text-muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <strong style="margin-right:auto; font-family:var(--font-display); color:#fff8ec; letter-spacing:.02em;">HOLLOW CREEK FAIR</strong>
+      <a href="#" style="color:#fff8ec;text-decoration:none">Quilts</a>
+      <a href="#" style="color:#f3e2bf;text-decoration:none">Livestock</a>
+      <button class="btn btn--primary">Enter your pie</button>
+    </nav>
+
+    <header>
+      <h1>Painted by hand, blue ribbon every time.</h1>
+      <p class="lede">Roosters as tall as barns, orchards stacked three deep, and a quilt border
+        stitched along every page — the county fair catalog, illustrated by the folks who grew the tomatoes.</p>
+    </header>
+
+    <div class="row">
+      <button class="btn btn--primary">Sign up to exhibit</button>
+      <button class="btn">Browse the almanac</button>
+      <button class="btn" disabled>Judging closed</button>
+      <span class="badge">🌻 Best in Show</span>
+    </div>
+
+    <input class="input" placeholder="name your prize hen">
+
+    <div class="grid">
+      <article class="card">
+        <h3>Orchard row</h3>
+        <p>Every apple the same round red, every tree the same happy height — painted the way memory keeps them.</p>
+      </article>
+      <article class="card">
+        <h3>Barnyard chorus</h3>
+        <p>Hens, hogs, and a fiddle player, all flat, all bold, all outlined thick enough to trace with a finger.</p>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

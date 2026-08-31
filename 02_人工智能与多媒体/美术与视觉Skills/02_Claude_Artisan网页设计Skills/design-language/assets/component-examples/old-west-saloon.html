@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Old West / Saloon — component example</title>
+<!-- Import the one starter theme; that's ~80% of the look. -->
+<link rel="stylesheet" href="../starter-themes/old-west-saloon.css">
+<style>
+  .wrap { max-width: 880px; margin: 0 auto; padding: var(--space-16) var(--space-6); display: grid; gap: var(--space-8); }
+  h1 { font: 400 var(--text-4xl)/1.05 var(--font-display); letter-spacing: .02em; margin: 0; text-transform: uppercase; color: var(--color-primary); }
+  p.lede { color: var(--color-text-muted); font-size: var(--text-lg); margin: 0; max-width: 54ch; }
+  .row { display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); }
+  .card h3 { margin: 0 0 var(--space-2); font: 400 var(--text-xl) var(--font-display); text-transform: uppercase; letter-spacing: .03em; color: var(--color-sienna); }
+  .card p { margin: 0; color: var(--color-text-muted); }
+  .rope-rule { height: 6px; background-image: var(--rope-frame); border-radius: var(--radius-pill); margin-top: var(--space-2); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <strong style="margin-right:auto; font-family:var(--font-display); letter-spacing:.05em; text-transform:uppercase; color:var(--color-primary);">The Dusty Spur</strong>
+      <a href="#" style="color:var(--color-text);text-decoration:none">Bounty Board</a>
+      <a href="#" style="color:var(--color-text-muted);text-decoration:none">Bar Ledger</a>
+      <button class="btn btn--primary">Pin a Notice</button>
+    </nav>
+
+    <header>
+      <h1>Wanted: honest trade &amp; a stiff drink.</h1>
+      <p class="lede">Notices go up nailed to sun-bleached wood, the ink already fading by the second week.
+        Star badges, rope trim, and burnt-sienna type — this is the frontier trading post, not the diner
+        down the road.</p>
+      <div class="rope-rule"></div>
+    </header>
+
+    <div class="row">
+      <button class="btn btn--primary">Claim the Bounty</button>
+      <button class="btn">Read the Ledger</button>
+      <button class="btn" disabled>Marshal Out of Town</button>
+      <span class="badge">★ Deputized</span>
+    </div>
+
+    <input class="input" placeholder="name for the wanted notice">
+
+    <div class="grid">
+      <article class="card">
+        <h3>Reward Notice</h3>
+        <p>Two hundred dollars, dead or alive — posted outside the Dusty Spur since the last full moon.</p>
+      </article>
+      <article class="card">
+        <h3>Trail Supplies</h3>
+        <p>Flour, salt pork, and rope by the coil, weighed out on the same scale since '78.</p>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

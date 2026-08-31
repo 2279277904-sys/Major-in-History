@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Persian Miniature — component example</title>
+<!-- Import the one starter theme; that's ~80% of the look. -->
+<link rel="stylesheet" href="../starter-themes/persian-miniature.css">
+<style>
+  .wrap { max-width: 880px; margin: 0 auto; padding: var(--space-16) var(--space-6); display: grid; gap: var(--space-8); }
+  h1 { font: 600 var(--text-4xl)/1.15 var(--font-display); margin: 0; color: var(--color-primary); }
+  p.lede { color: var(--color-text-muted); font-size: var(--text-lg); margin: 0; max-width: 54ch; }
+  .row { display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); }
+  .card h3 { margin: 0 0 var(--space-2); font: 600 var(--text-xl) var(--font-display); color: var(--color-accent); }
+  .card p { margin: 0; color: var(--color-text-muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <strong style="margin-right:auto; font-family:var(--font-display); letter-spacing:.05em; color:var(--color-primary);">GARDEN OF SEVEN THRONES</strong>
+      <a href="#" style="color:var(--color-text);text-decoration:none">Folios</a>
+      <a href="#" style="color:var(--color-text-muted);text-decoration:none">Colophon</a>
+      <button class="btn btn--primary">Unroll the scroll</button>
+    </nav>
+
+    <header>
+      <h1>A thousand blossoms, none behind another.</h1>
+      <p class="lede">Courtyard and orchard and throne room, all held on one page at once — lapis pools,
+        vermillion robes, and gold leaf tracing the vine along every border.</p>
+    </header>
+
+    <div class="row">
+      <button class="btn btn--primary">Commission a folio</button>
+      <button class="btn">View the Shahnameh</button>
+      <button class="btn" disabled>Workshop closed</button>
+      <span class="badge">✦ Court commission</span>
+    </div>
+
+    <input class="input" placeholder="inscribe the patron's name">
+
+    <div class="grid">
+      <article class="card">
+        <h3>Nightingale garden</h3>
+        <p>Cypress and rose stand in flattened rows, each leaf outlined finer than a hair, gilt at every stem.</p>
+      </article>
+      <article class="card">
+        <h3>Throne of Jamshid</h3>
+        <p>The king sits frontal among courtiers stacked above and beside him — nearness measured by rank, not distance.</p>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

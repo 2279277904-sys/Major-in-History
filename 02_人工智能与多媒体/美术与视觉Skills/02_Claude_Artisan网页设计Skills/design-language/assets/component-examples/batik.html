@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Batik — component example</title>
+<!-- Import the one starter theme; that's ~80% of the look. -->
+<link rel="stylesheet" href="../starter-themes/batik.css">
+<style>
+  .wrap { max-width: 880px; margin: 0 auto; padding: var(--space-16) var(--space-6); display: grid; gap: var(--space-8); }
+  h1 { font: 600 var(--text-4xl)/1.1 var(--font-display); margin: 0; color: var(--color-indigo-deep); }
+  p.lede { color: var(--color-text-muted); font-size: var(--text-lg); margin: 0; max-width: 54ch; }
+  .row { display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); }
+  .card h3 { margin: 0 0 var(--space-2); font: 600 var(--text-xl) var(--font-display); color: var(--color-primary); }
+  .card p { margin: 0; color: var(--color-text-muted); }
+  .swatch { height: 6px; border-radius: var(--radius-pill); background-image: var(--motif-border); margin-top: var(--space-2); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <strong style="margin-right:auto; font-family:var(--font-display); letter-spacing:.03em;">Rumah Canting</strong>
+      <a href="#" style="color:var(--color-text);text-decoration:none">The Cloth Room</a>
+      <a href="#" style="color:var(--color-text-muted);text-decoration:none">Dye Vats</a>
+      <button class="btn btn--primary">Book the Loom</button>
+    </nav>
+
+    <header>
+      <h1>Wax drawn slow, dye set deep.</h1>
+      <p class="lede">Each panel is drawn line by line with a hot canting pen, dipped in indigo and rust dye
+        vats, then boiled clean — the hairline cracks in the wax are what give every bolt its own signature.</p>
+      <div class="swatch"></div>
+    </header>
+
+    <div class="row">
+      <button class="btn btn--primary">Order a Bolt</button>
+      <button class="btn">Visit the Workshop</button>
+      <button class="btn" disabled>Vat Resting</button>
+      <span class="badge">Hand-drawn tulis</span>
+    </div>
+
+    <input class="input" placeholder="tell us your motif request">
+
+    <div class="grid">
+      <article class="card">
+        <h3>Parang Rusak</h3>
+        <p>The diagonal blade-edge motif, drawn freehand across three dye baths of indigo, rust, and ochre.</p>
+      </article>
+      <article class="card">
+        <h3>Kawung Bloom</h3>
+        <p>Overlapping four-petal medallions, wax-resisted twice for the deepest indigo ground in the shop.</p>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+/* Old West / Saloon — design tokens */
+/* 1860s–1900s | American frontier wanted-poster and saloon-sign aesthetic */
+:root {
+  /* color */
+  --color-bg: #e8d9b8;
+  --color-surface: #f0e4c8;
+  --color-surface-2: #d8c397;
+  --color-text: #2c1608;
+  --color-text-muted: #6b4a28;
+  --color-primary: #7a2e17;
+  --color-accent: #c99a3b;
+  --color-sienna: #8a3d1f;
+  --color-star: #3a3226;
+  /* radius */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-pill: 999px;
+  /* shadow */
+  --shadow-weathered: 0 8px 20px rgba(44,22,8,0.28);
+  --shadow-weathered-sm: 0 3px 10px rgba(44,22,8,0.24);
+  /* blur */
+  --blur-none: 0px;
+  /* font */
+  --font-sans: 'Roboto Slab', 'Georgia', serif;
+  --font-display: 'Rye', 'Ultra', 'Impact', 'Arial Black', serif;
+  --font-mono: ui-monospace, monospace;
+  /* text */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+  --text-4xl: 3rem;
+  --text-5xl: 4rem;
+  /* space */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  /* ease */
+  --ease-standard: cubic-bezier(0.3, 0, 0.2, 1);
+  /* extra: distressed paper grain + rope-border frame */
+  --paper-grain: repeating-radial-gradient(circle at 25% 30%, rgba(44,22,8,0.06) 0px, transparent 3px, transparent 9px), repeating-linear-gradient(4deg, rgba(44,22,8,0.04) 0 1px, transparent 1px 6px);
+  --rope-frame: repeating-linear-gradient(135deg, #7a2e17 0 3px, #c99a3b 3px 6px);
+}
+
+/* ============================================================
+   Base component classes — Old West / Saloon
+   Signature move: distressed wood-grain / aged-paper texture,
+   burnt-sienna and dusty-gold palette, tall condensed wood-type
+   display lettering like a WANTED poster, and star-badge / rope
+   border motifs.
+   ============================================================ */
+body { margin: 0; color: var(--color-text); font-family: var(--font-sans); background: var(--color-bg); background-image: var(--paper-grain); min-height: 100vh; }
+.nav {
+  display: flex; gap: var(--space-4); align-items: center;
+  padding: var(--space-3) var(--space-6); background: var(--color-surface);
+  border-bottom: 4px solid var(--color-primary);
+}
+.btn {
+  font: 600 var(--text-base)/1 var(--font-sans); color: var(--color-text);
+  padding: var(--space-3) var(--space-6); border-radius: var(--radius-sm);
+  background: var(--color-surface-2); border: 2px solid var(--color-primary);
+  cursor: pointer; transition: box-shadow .2s var(--ease-standard), transform .2s var(--ease-standard);
+}
+.btn:hover { box-shadow: var(--shadow-weathered-sm); transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+.btn:focus-visible { outline: 2px dashed var(--color-star); outline-offset: 3px; }
+.btn[disabled] { opacity: .45; cursor: not-allowed; box-shadow: none; transform: none; }
+.btn--primary {
+  background: var(--color-primary); color: var(--color-bg); border: 2px solid var(--color-sienna);
+  box-shadow: var(--shadow-weathered-sm);
+}
+.btn--primary:hover { box-shadow: var(--shadow-weathered); }
+.card {
+  background: var(--color-surface); background-image: var(--paper-grain);
+  border-radius: var(--radius-md); padding: var(--space-6);
+  border: 2px solid var(--color-sienna); box-shadow: var(--shadow-weathered);
+}
+.input {
+  width: 100%; box-sizing: border-box; color: var(--color-text); font: var(--text-base) var(--font-sans);
+  padding: var(--space-3) var(--space-4); border-radius: var(--radius-sm);
+  background: var(--color-surface); border: 2px solid var(--color-primary);
+}
+.input::placeholder { color: var(--color-text-muted); }
+.input:focus { outline: none; border-color: var(--color-accent); box-shadow: var(--shadow-weathered-sm); }
+.badge {
+  display: inline-flex; align-items: center; gap: .4em; font-size: var(--text-xs); font-weight: 700;
+  text-transform: uppercase; letter-spacing: .06em;
+  padding: .3em .8em; border-radius: var(--radius-sm);
+  background: var(--color-accent); color: var(--color-text); border: 2px solid var(--color-primary);
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn { transition: none; }
+  .btn:hover { transform: none; }
+}

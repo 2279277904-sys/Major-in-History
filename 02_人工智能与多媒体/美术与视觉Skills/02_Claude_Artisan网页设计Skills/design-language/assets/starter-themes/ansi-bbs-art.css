@@ -1,0 +1,106 @@
+/* ANSI / BBS Art — design tokens */
+/* 1980s-90s | Dial-up BBS splash art: 16-color ANSI/CP437 block-character mosaics */
+:root {
+  /* color */
+  --color-bg: #000000;
+  --color-surface: #0a0a0a;
+  --color-surface-2: #1c1c1c;
+  --color-text: #c0c0c0;
+  --color-text-muted: #808080;
+  --color-primary: #ff5555;
+  --color-accent: #55ffff;
+  --color-yellow: #ffff55;
+  --color-green: #55ff55;
+  --color-magenta: #ff55ff;
+  --color-blue: #5555ff;
+  --color-white: #ffffff;
+  --color-red-dark: #aa0000;
+  /* radius */
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-pill: 0px;
+  /* shadow */
+  --shadow-none: none;
+  /* blur */
+  --blur-none: 0px;
+  /* font */
+  --font-sans: 'Perfect DOS VGA 437', 'Courier New', monospace;
+  --font-display: 'Perfect DOS VGA 437', 'Courier New', monospace;
+  --font-mono: 'Perfect DOS VGA 437', 'Courier New', monospace;
+  /* text */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+  --text-4xl: 3rem;
+  --text-5xl: 3.75rem;
+  /* space */
+  --space-1: 1ch;
+  --space-2: 2ch;
+  --space-3: 3ch;
+  --space-4: 4ch;
+  --space-6: 6ch;
+  --space-8: 8ch;
+  --space-12: 12ch;
+  --space-16: 16ch;
+  --space-24: 24ch;
+  /* ease */
+  --ease-standard: steps(1, end);
+  /* extra: double-line box-drawing border + block shading */
+  --box-double: 3px double var(--color-accent);
+  --shade-block: repeating-linear-gradient(45deg, currentColor 0 1px, transparent 1px 3px);
+  --bg-image: none;
+}
+
+/* ============================================================
+   Base component classes — ANSI / BBS Art
+   Signature move: 16-color CP437 block-mosaic art, blocky
+   extended-ASCII borders (double-line box characters), and
+   monospaced type only, never anti-aliased.
+   ============================================================ */
+body { margin: 0; color: var(--color-text); font-family: var(--font-mono); background: var(--color-bg); min-height: 100vh; }
+.nav {
+  display: flex; gap: var(--space-4); align-items: center;
+  padding: var(--space-2) var(--space-4); background: var(--color-blue);
+  color: var(--color-white); border-bottom: var(--box-double);
+}
+.btn {
+  font: 700 var(--text-sm)/1 var(--font-mono); text-transform: uppercase;
+  color: var(--color-bg);
+  padding: var(--space-2) var(--space-4); border-radius: 0;
+  background: var(--color-green); border: 1px solid var(--color-white);
+  cursor: pointer;
+}
+.btn:hover { background: var(--color-yellow); }
+.btn:active { background: var(--color-accent); }
+.btn:focus-visible { outline: 2px dashed var(--color-white); outline-offset: 2px; }
+.btn[disabled] { opacity: .4; cursor: not-allowed; background: var(--color-surface-2); color: var(--color-text-muted); }
+.btn--primary {
+  background: var(--color-primary); color: var(--color-white);
+  border: 1px solid var(--color-yellow);
+}
+.btn--primary:hover { background: #ff7777; }
+.card {
+  background: var(--color-surface);
+  border-radius: 0; padding: var(--space-4);
+  border: var(--box-double);
+}
+.input {
+  width: 100%; box-sizing: border-box; color: var(--color-green); font: var(--text-base) var(--font-mono);
+  padding: var(--space-2) var(--space-3); border-radius: 0;
+  background: #000000; border: 1px solid var(--color-text-muted);
+}
+.input::placeholder { color: var(--color-text-muted); }
+.input:focus { outline: none; border-color: var(--color-accent); box-shadow: 0 0 0 1px var(--color-accent); }
+.badge {
+  display: inline-flex; align-items: center; gap: .3em; font-size: var(--text-xs); font-weight: 700;
+  padding: .25em .7em; border-radius: 0;
+  background: var(--color-magenta); color: var(--color-bg); border: 1px solid var(--color-white);
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn { transition: none; }
+}

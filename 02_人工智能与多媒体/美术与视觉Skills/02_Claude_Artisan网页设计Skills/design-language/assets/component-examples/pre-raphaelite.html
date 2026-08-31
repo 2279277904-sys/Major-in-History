@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pre-Raphaelite — component example</title>
+<!-- Import the one starter theme; that's ~80% of the look. -->
+<link rel="stylesheet" href="../starter-themes/pre-raphaelite.css">
+<style>
+  .wrap { max-width: 880px; margin: 0 auto; padding: var(--space-16) var(--space-6); display: grid; gap: var(--space-8); }
+  h1 { font: 600 var(--text-4xl)/1.15 var(--font-display); margin: 0; color: var(--color-ivory); }
+  p.lede { color: var(--color-text-muted); font-size: var(--text-lg); margin: 0; max-width: 54ch; }
+  .row { display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); }
+  .card h3 { margin: 0 0 var(--space-2); font: 600 var(--text-xl) var(--font-display); color: var(--color-gold); }
+  .card p { margin: 0; color: var(--color-text-muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <strong style="margin-right:auto; font-family:var(--font-display); letter-spacing:.04em;">THE GOLDEN STAIR STUDIO</strong>
+      <a href="#" style="color:var(--color-text);text-decoration:none">Gallery</a>
+      <a href="#" style="color:var(--color-text-muted);text-decoration:none">Commissions</a>
+      <button class="btn btn--primary">Sit for a portrait</button>
+    </nav>
+
+    <header>
+      <h1>Ivy at the frame's edge, gold beneath the glaze.</h1>
+      <p class="lede">Every canvas is painted from life — flame-red hair, an emerald gown, a lily
+        held just so — and finished with a warm gold varnish that seems to glow from within.</p>
+    </header>
+
+    <div class="row">
+      <button class="btn btn--primary">Book a sitting</button>
+      <button class="btn">View the gallery</button>
+      <button class="btn" disabled>Studio closed for framing</button>
+      <span class="badge">est. 1848</span>
+    </div>
+
+    <input class="input" placeholder="describe the scene you wish painted">
+
+    <div class="grid">
+      <article class="card">
+        <h3>Proserpine's Garden</h3>
+        <p>Crimson pomegranate, emerald ivy climbing the frame, and a face lit as if by stained glass.</p>
+      </article>
+      <article class="card">
+        <h3>The Lily Maiden</h3>
+        <p>Flowing hair rendered strand by strand, a border of hand-painted lilies, and a gold-glazed sky.</p>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

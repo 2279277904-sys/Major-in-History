@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Woodcut / Linocut — component example</title>
+<!-- Import the one starter theme; that's ~80% of the look. -->
+<link rel="stylesheet" href="../starter-themes/woodcut-linocut.css">
+<style>
+  .wrap { max-width: 880px; margin: 0 auto; padding: var(--space-16) var(--space-6); display: grid; gap: var(--space-8); }
+  h1 { font: 400 var(--text-4xl)/1.05 var(--font-display); letter-spacing: .02em; margin: 0; text-transform: uppercase; }
+  p.lede { color: var(--color-text-muted); font-size: var(--text-lg); margin: 0; max-width: 54ch; }
+  .row { display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); }
+  .card h3 { margin: 0 0 var(--space-2); font: 400 var(--text-xl) var(--font-display); letter-spacing: .02em; text-transform: uppercase; }
+  .card p { margin: 0; color: var(--color-text-muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <strong style="margin-right:auto; font-family:var(--font-display); letter-spacing:.05em; text-transform:uppercase;">Blockhouse Press</strong>
+      <a href="#" style="color:var(--color-text);text-decoration:none">Editions</a>
+      <a href="#" style="color:var(--color-text-muted);text-decoration:none">The Studio</a>
+      <button class="btn btn--primary">Pull a Print</button>
+    </nav>
+
+    <header>
+      <h1>Cut by hand, pressed by hand.</h1>
+      <p class="lede">Every line here started as a gouge through birch plywood — the wobble in the outline is not
+        a flaw, it's the knife finding its own way through the grain. One spot color, one ink, one press.</p>
+    </header>
+
+    <div class="row">
+      <button class="btn btn--primary">Commission a Block</button>
+      <button class="btn">Browse the Archive</button>
+      <button class="btn" disabled>Edition Sold Out</button>
+      <span class="badge">No. 7 of 30</span>
+    </div>
+
+    <input class="input" placeholder="leave your name in the guestbook">
+
+    <div class="grid">
+      <article class="card">
+        <h3>The Harvest Block</h3>
+        <p>A single sheet of birch, three passes of red ink, hand-burnished with the back of a wooden spoon.</p>
+      </article>
+      <article class="card">
+        <h3>Rooster &amp; Wheat</h3>
+        <p>Carved in an evening by lamplight; the deep gouge marks in the field are left visible on purpose.</p>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

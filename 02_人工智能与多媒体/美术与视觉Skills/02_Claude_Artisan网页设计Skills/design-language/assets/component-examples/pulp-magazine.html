@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pulp Magazine Cover Art — component example</title>
+<!-- Import the one starter theme; that's ~80% of the look. -->
+<link rel="stylesheet" href="../starter-themes/pulp-magazine.css">
+<style>
+  .wrap { max-width: 880px; margin: 0 auto; padding: var(--space-16) var(--space-6); display: grid; gap: var(--space-8); }
+  h1 { font: 800 var(--text-5xl)/0.95 var(--font-display); letter-spacing: .01em; margin: 0; color: var(--color-primary); text-shadow: var(--masthead-shadow); }
+  p.lede { color: var(--color-text-muted); font-size: var(--text-lg); margin: 0; max-width: 52ch; }
+  .row { display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); }
+  .card h3 { margin: 0 0 var(--space-2); font: 800 var(--text-xl) var(--font-display); color: var(--color-accent); }
+  .card p { margin: 0; color: var(--color-text-muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <strong style="margin-right:auto; font-family:var(--font-display); font-size:var(--text-xl); letter-spacing:.03em; color:var(--color-accent);">THRILLING TALES</strong>
+      <a href="#" style="color:var(--color-text);text-decoration:none">Back Issues</a>
+      <a href="#" style="color:var(--color-text-muted);text-decoration:none">Subscribe</a>
+      <button class="btn btn--primary">Get this issue</button>
+    </nav>
+
+    <header>
+      <h1>DEATH STALKS THE MIDNIGHT LINER!</h1>
+      <p class="lede">A rocket-jawed detective, a jewel thief in a scarlet gown, and one locked cabin
+        forty thousand feet above the Pacific — this month's cover story pulls no punches.</p>
+    </header>
+
+    <div class="row">
+      <button class="btn btn--primary">Read the cover story</button>
+      <button class="btn">Browse the archive</button>
+      <button class="btn" disabled>Sold out on newsstands</button>
+      <span class="badge">25¢ · Shocking!</span>
+    </div>
+
+    <input class="input" placeholder="your name for the subscriber roll">
+
+    <div class="grid">
+      <article class="card">
+        <h3>The Scarlet Ledger</h3>
+        <p>A private eye's last case turns into a ledger of every lie a city ever told itself.</p>
+      </article>
+      <article class="card">
+        <h3>Terror on Cinder Road</h3>
+        <p>Three strangers, one broken-down truck, and something moving in the headlights.</p>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

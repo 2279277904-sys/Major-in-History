@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chalkboard Lettering — component example</title>
+<!-- Import the one starter theme; that's ~80% of the look. -->
+<link rel="stylesheet" href="../starter-themes/chalkboard-lettering.css">
+<style>
+  .wrap { max-width: 880px; margin: 0 auto; padding: var(--space-16) var(--space-6); display: grid; gap: var(--space-8); }
+  h1 { font: 500 var(--text-4xl)/1.1 var(--font-display); margin: 0; color: var(--color-primary); }
+  p.lede { color: var(--color-text-muted); font-size: var(--text-lg); margin: 0; max-width: 54ch; }
+  .row { display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); }
+  .card h3 { margin: 0 0 var(--space-2); font: 500 var(--text-2xl) var(--font-display); color: var(--color-chalk-yellow); }
+  .card p { margin: 0; color: var(--color-text-muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <strong style="margin-right:auto; font-family:var(--font-display); font-size:var(--text-2xl); letter-spacing:.02em;">Corner &amp; Crumb</strong>
+      <a href="#" style="color:var(--color-text);text-decoration:none">Menu</a>
+      <a href="#" style="color:var(--color-text-muted);text-decoration:none">Specials</a>
+      <button class="btn btn--primary">Order at the counter</button>
+    </nav>
+
+    <header>
+      <h1>Today's roast, hand-drawn fresh</h1>
+      <p class="lede">Somebody redraws this board every morning before the espresso machine even warms up —
+        wobbly capitals, a doodled coffee bean, and a wavy underline nobody bothered to straighten.</p>
+    </header>
+
+    <div class="row">
+      <button class="btn btn--primary">Add oat milk</button>
+      <button class="btn">See today's specials</button>
+      <button class="btn" disabled>Sold out</button>
+      <span class="badge">☆ New!</span>
+    </div>
+
+    <input class="input" placeholder="name for the cup">
+
+    <div class="grid">
+      <article class="card">
+        <h3>Cinnamon Swirl Latte</h3>
+        <p>House cinnamon syrup, steamed oat milk, a chalk-dust dash of nutmeg drawn right on the cup art.</p>
+      </article>
+      <article class="card">
+        <h3>Sunday Slow Brew</h3>
+        <p>Twelve hours cold, poured over one big cube, served with a little hand-drawn sun in the corner.</p>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

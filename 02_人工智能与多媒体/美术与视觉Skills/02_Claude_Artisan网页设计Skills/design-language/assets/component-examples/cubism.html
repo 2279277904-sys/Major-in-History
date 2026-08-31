@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cubism — component example</title>
+<!-- Import the one starter theme; that's ~80% of the look. -->
+<link rel="stylesheet" href="../starter-themes/cubism.css">
+<style>
+  .wrap { max-width: 880px; margin: 0 auto; padding: var(--space-16) var(--space-6); display: grid; gap: var(--space-8); }
+  h1 { font: 700 var(--text-4xl)/1.1 var(--font-display); margin: 0; color: var(--color-ink); }
+  p.lede { color: var(--color-text-muted); font-size: var(--text-lg); margin: 0; max-width: 54ch; }
+  .row { display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); }
+  .card h3 { margin: 0 0 var(--space-2); font: 700 var(--text-xl) var(--font-display); color: var(--color-primary); }
+  .card p { margin: 0; color: var(--color-text-muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <strong style="margin-right:auto; font-family:var(--font-display); letter-spacing:.04em;">ATELIER BRAQUE &amp; FILS</strong>
+      <a href="#">Salon</a>
+      <a href="#" style="opacity:.7">Papier Collé</a>
+      <button class="btn btn--primary">Book a sitting</button>
+    </nav>
+
+    <header>
+      <h1>Every angle of you, assembled at once.</h1>
+      <p class="lede">We paint the sitter from the front, the side, and the memory of yesterday's light —
+        then cut the canvas into planes and glue it back together as one true portrait.</p>
+    </header>
+
+    <div class="row">
+      <button class="btn btn--primary">Reserve a canvas</button>
+      <button class="btn">View the collage wall</button>
+      <button class="btn" disabled>Studio closed today</button>
+      <span class="badge">Salon des Indépendants</span>
+    </div>
+
+    <input class="input" placeholder="leave your name for the guest ledger">
+
+    <div class="grid">
+      <article class="card">
+        <h3>Still Life, Reassembled</h3>
+        <p>Newsprint, wood-grain paper, and a violin's silhouette — cut, overlapped, and pinned to the frame.</p>
+      </article>
+      <article class="card">
+        <h3>The Musicians</h3>
+        <p>Three faces seen from every side simultaneously, ochre and sienna planes locked in a black-line lattice.</p>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

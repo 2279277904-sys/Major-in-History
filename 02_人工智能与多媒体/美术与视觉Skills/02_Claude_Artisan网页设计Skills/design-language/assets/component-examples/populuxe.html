@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Populuxe — component example</title>
+<!-- Import the one starter theme; that's ~80% of the look. -->
+<link rel="stylesheet" href="../starter-themes/populuxe.css">
+<style>
+  .wrap { max-width: 880px; margin: 0 auto; padding: var(--space-16) var(--space-6); display: grid; gap: var(--space-8); }
+  h1 { font: 800 var(--text-4xl)/1.1 var(--font-display); font-style: italic; margin: 0; color: var(--color-text); }
+  p.lede { color: var(--color-text-muted); font-size: var(--text-lg); margin: 0; max-width: 54ch; }
+  .row { display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); }
+  .card h3 { margin: 0 0 var(--space-2); font: 800 var(--text-xl) var(--font-display); font-style: italic; color: var(--color-primary); }
+  .card p { margin: 0; color: var(--color-text-muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <strong style="margin-right:auto; font-family:var(--font-display); font-style:italic; letter-spacing:.03em;">TOMORROWLAND HOME &amp; APPLIANCE</strong>
+      <a href="#" style="color:var(--color-text);text-decoration:none">Showroom</a>
+      <a href="#" style="color:var(--color-text-muted);text-decoration:none">Financing</a>
+      <button class="btn btn--primary">See the '58 line</button>
+    </nav>
+
+    <header>
+      <h1>The future is here — and it's turquoise and pink.</h1>
+      <p class="lede">Chrome trim, push-button everything, and a kitchen that looks ready for the moon landing.
+        Tomorrowland brings atomic-age living to Main Street, on easy monthly terms.</p>
+    </header>
+
+    <div class="row">
+      <button class="btn btn--primary">Visit the showroom</button>
+      <button class="btn">Request a brochure</button>
+      <button class="btn" disabled>Sold out this week</button>
+      <span class="badge">★ New for '58</span>
+    </div>
+
+    <input class="input" placeholder="your name, for the door-prize drawing">
+
+    <div class="grid">
+      <article class="card">
+        <h3>Starlite Range</h3>
+        <p>Push-button ignition, boomerang-handled oven door, and a chrome clock that never needs winding.</p>
+      </article>
+      <article class="card">
+        <h3>Jetstream Refrigerator</h3>
+        <p>Two-tone mint and cream, an atomic starburst medallion, and enough room for the whole neighborhood's picnic.</p>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

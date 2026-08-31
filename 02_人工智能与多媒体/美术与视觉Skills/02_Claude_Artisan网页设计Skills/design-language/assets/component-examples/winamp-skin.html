@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Winamp Skin — component example</title>
+<!-- Import the one starter theme; that's ~80% of the look. -->
+<link rel="stylesheet" href="../starter-themes/winamp-skin.css">
+<style>
+  .wrap { max-width: 760px; margin: 0 auto; padding: var(--space-16) var(--space-6); display: grid; gap: var(--space-6); }
+  h1 { font: 700 var(--text-2xl)/1.2 var(--font-display); margin: 0; color: var(--color-chrome-hi); text-transform: uppercase; letter-spacing: .04em; }
+  p.lede { color: var(--color-text-muted); font-size: var(--text-lg); margin: 0; max-width: 54ch; }
+  .row { display: flex; gap: var(--space-2); flex-wrap: wrap; align-items: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-3); }
+  .card h3 { margin: 0 0 var(--space-2); font: 700 var(--text-lg) var(--font-display); color: var(--color-primary); text-transform: uppercase; }
+  .card p { margin: 0; color: var(--color-text-muted); font-size: var(--text-sm); }
+  .meter { height: 6px; border-radius: var(--radius-sm); background: var(--led-meter); box-shadow: var(--shadow-inset); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <strong style="margin-right:auto; font-family:var(--font-display); text-transform:uppercase; letter-spacing:.05em; color:var(--color-chrome-hi);">⏵ mp3PLAYR v2.95</strong>
+      <a href="#" style="color:var(--color-text);text-decoration:none">EQ</a>
+      <a href="#" style="color:var(--color-text-muted);text-decoration:none">PL</a>
+      <button class="btn btn--primary">⏵ PLAY</button>
+    </nav>
+
+    <header>
+      <h1>128kbps of pure brushed-metal joy.</h1>
+      <p class="lede">Chrome bevels, a green LED meter that never stops twitching, and forty controls
+        packed into a window the size of a business card — this is skinning culture at its densest.</p>
+    </header>
+
+    <div class="row">
+      <button class="btn btn--primary">⏵ Play</button>
+      <button class="btn">⏸ Pause</button>
+      <button class="btn" disabled>⏭ Next (locked)</button>
+      <span class="badge">● REC</span>
+    </div>
+
+    <div class="meter"></div>
+
+    <input class="input" placeholder="C:\MP3\track04.mp3">
+
+    <div class="grid">
+      <article class="card">
+        <h3>Equalizer</h3>
+        <p>Ten pixel-tight sliders, a preamp knob, and a preset dropdown crammed under 14px labels.</p>
+      </article>
+      <article class="card">
+        <h3>Visualizer</h3>
+        <p>Neon-green spectrum bars bounce against brushed steel, skinned separately from the main deck.</p>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

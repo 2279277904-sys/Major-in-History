@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daguerreotype — component example</title>
+<!-- Import the one starter theme; that's ~80% of the look. -->
+<link rel="stylesheet" href="../starter-themes/daguerreotype.css">
+<style>
+  .wrap { max-width: 880px; margin: 0 auto; padding: var(--space-16) var(--space-6); display: grid; gap: var(--space-8); }
+  h1 { font: 600 var(--text-4xl)/1.15 var(--font-display); margin: 0; color: var(--color-primary); }
+  p.lede { color: var(--color-text-muted); font-size: var(--text-lg); margin: 0; max-width: 54ch; }
+  .row { display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); }
+  .card h3 { margin: 0 0 var(--space-2); font: 600 var(--text-xl) var(--font-display); color: var(--color-primary); }
+  .card p { margin: 0; color: var(--color-text-muted); position: relative; z-index: 1; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <strong style="margin-right:auto; font-family:var(--font-display); letter-spacing:.04em;">HAWES &amp; CO. STUDIO</strong>
+      <a href="#" style="color:var(--color-text);text-decoration:none">Sittings</a>
+      <a href="#" style="color:var(--color-text-muted);text-decoration:none">Gallery</a>
+      <button class="btn btn--primary">Book a sitting</button>
+    </nav>
+
+    <header>
+      <h1>Hold perfectly still for the plate.</h1>
+      <p class="lede">Silver-plated copper, twenty seconds of exposure, and a single window's worth of light —
+        every portrait comes back fixed in silver, framed in gilt, quiet as the moment it was taken.</p>
+    </header>
+
+    <div class="row">
+      <button class="btn btn--primary">Reserve the headrest</button>
+      <button class="btn">View the case designs</button>
+      <button class="btn" disabled>Studio closed today</button>
+      <span class="badge">Est. 1843</span>
+    </div>
+
+    <input class="input" placeholder="sitter's name for the ledger">
+
+    <div class="grid">
+      <article class="card">
+        <h3>The oval case</h3>
+        <p>A hinged velvet case holds the plate steady, its gilt-edge oval mat the only ornament allowed.</p>
+      </article>
+      <article class="card">
+        <h3>The long exposure</h3>
+        <p>A brass headrest keeps the sitter motionless while the silver slowly darkens into a likeness.</p>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

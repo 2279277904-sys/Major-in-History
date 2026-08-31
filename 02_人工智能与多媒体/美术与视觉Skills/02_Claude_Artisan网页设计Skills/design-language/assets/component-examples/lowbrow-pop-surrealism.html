@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lowbrow / Pop Surrealism — component example</title>
+<!-- Import the one starter theme; that's ~80% of the look. -->
+<link rel="stylesheet" href="../starter-themes/lowbrow-pop-surrealism.css">
+<style>
+  .wrap { max-width: 880px; margin: 0 auto; padding: var(--space-16) var(--space-6); display: grid; gap: var(--space-8); }
+  h1 { font: 700 var(--text-4xl)/1.05 var(--font-display); margin: 0; color: var(--color-primary); }
+  p.lede { color: var(--color-text-muted); font-size: var(--text-lg); margin: 0; max-width: 54ch; }
+  .row { display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); }
+  .card h3 { margin: 0 0 var(--space-2); font: 700 var(--text-xl) var(--font-display); color: var(--color-accent); }
+  .card p { margin: 0; color: var(--color-text-muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <strong style="margin-right:auto; font-family:var(--font-display); font-size:var(--text-lg); color:var(--color-gold);">CANDY HEARSE GALLERY</strong>
+      <a href="#" style="color:var(--color-text);text-decoration:none">Exhibits</a>
+      <a href="#" style="color:var(--color-text-muted);text-decoration:none">Artists</a>
+      <button class="btn btn--primary">Get tickets</button>
+    </nav>
+
+    <header>
+      <h1>Cute things with too many teeth.</h1>
+      <p class="lede">Airbrushed hot-rod pinstripes, grinning bunnies, and melting ice cream cones —
+        a gallery show where candy-bright surfaces hide something quietly unsettling underneath.</p>
+    </header>
+
+    <div class="row">
+      <button class="btn btn--primary">Reserve a slot</button>
+      <button class="btn">View the catalog</button>
+      <button class="btn" disabled>Opening night full</button>
+      <span class="badge">◕ ◡ ◕ new drop</span>
+    </div>
+
+    <input class="input" placeholder="leave your name at the door">
+
+    <div class="grid">
+      <article class="card">
+        <h3>Sugar Skull Hot Rod</h3>
+        <p>A chrome-flame roadster driven by a grinning porcelain doll, airbrushed in candy pink.</p>
+      </article>
+      <article class="card">
+        <h3>Melting Mascot Parade</h3>
+        <p>Kustom-kulture linework wraps a parade of cartoon mascots slowly dissolving into syrup.</p>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

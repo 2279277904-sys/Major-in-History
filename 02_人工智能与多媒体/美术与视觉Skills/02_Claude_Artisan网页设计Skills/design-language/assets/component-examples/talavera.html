@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Talavera — component example</title>
+<!-- Import the one starter theme; that's ~80% of the look. -->
+<link rel="stylesheet" href="../starter-themes/talavera.css">
+<style>
+  .wrap { max-width: 880px; margin: 0 auto; padding: var(--space-16) var(--space-6); display: grid; gap: var(--space-8); }
+  h1 { font: 700 var(--text-4xl)/1.1 var(--font-display); margin: 0; color: var(--color-primary); }
+  p.lede { color: var(--color-text-muted); font-size: var(--text-lg); margin: 0; max-width: 54ch; }
+  .row { display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); }
+  .card h3 { margin: 0 0 var(--space-2); font: 700 var(--text-xl) var(--font-display); color: var(--color-accent); }
+  .card p { margin: 0; color: var(--color-text-muted); }
+  .tile-strip { height: 10px; background-image: var(--tile-border); border-radius: var(--radius-pill); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <strong style="margin-right:auto; font-family:var(--font-display); letter-spacing:.02em; color:var(--color-primary);">Taller Azul y Sol</strong>
+      <a href="#" style="color:var(--color-text);text-decoration:none">The Kiln Room</a>
+      <a href="#" style="color:var(--color-text-muted);text-decoration:none">Order Book</a>
+      <button class="btn btn--primary">Visit the Taller</button>
+    </nav>
+
+    <header>
+      <h1>Painted wet, fired bright, glazed forever.</h1>
+      <p class="lede">Every tile leaves the kiln with the same confident cobalt outline, filled in with
+        marigold, terracotta, and leaf green under a glass-glossy glaze — Puebla's tin-glazed tradition,
+        four centuries strong.</p>
+      <div class="tile-strip"></div>
+    </header>
+
+    <div class="row">
+      <button class="btn btn--primary">Commission a Set</button>
+      <button class="btn">Tour the Workshop</button>
+      <button class="btn" disabled>Kiln Firing</button>
+      <span class="badge">Denominación de Origen</span>
+    </div>
+
+    <input class="input" placeholder="describe the pattern you'd like">
+
+    <div class="grid">
+      <article class="card">
+        <h3>Sol y Luna</h3>
+        <p>A radiating sunburst medallion in cobalt and gold, hand-outlined before the second firing.</p>
+      </article>
+      <article class="card">
+        <h3>Jardín Poblano</h3>
+        <p>Overlapping pomegranate blossoms in green and terracotta, edge-to-edge across every tile face.</p>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

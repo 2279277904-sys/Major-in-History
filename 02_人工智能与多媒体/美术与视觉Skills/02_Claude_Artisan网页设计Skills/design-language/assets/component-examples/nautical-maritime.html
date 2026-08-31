@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nautical / Maritime — component example</title>
+<!-- Import the one starter theme; that's ~80% of the look. -->
+<link rel="stylesheet" href="../starter-themes/nautical-maritime.css">
+<style>
+  .wrap { max-width: 880px; margin: 0 auto; padding: var(--space-16) var(--space-6); display: grid; gap: var(--space-8); }
+  h1 { font: 600 var(--text-4xl)/1.05 var(--font-display); letter-spacing: .01em; margin: 0; text-transform: uppercase; color: var(--color-primary); }
+  p.lede { color: var(--color-text-muted); font-size: var(--text-lg); margin: 0; max-width: 54ch; }
+  .row { display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); }
+  .card h3 { margin: 0 0 var(--space-2); font: 600 var(--text-xl) var(--font-display); text-transform: uppercase; letter-spacing: .02em; color: var(--color-primary); }
+  .card p { margin: 0; color: var(--color-text-muted); }
+  .stripe-bar { height: 10px; background-image: var(--stripe-field); border: 1px solid var(--color-primary); border-radius: var(--radius-sm); }
+  .rope-rule { height: 6px; background-image: var(--rope-border); border-radius: var(--radius-pill); margin-top: var(--space-2); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <strong style="margin-right:auto; font-family:var(--font-display); letter-spacing:.06em; text-transform:uppercase;">Harborline Club</strong>
+      <a href="#" style="text-decoration:none">Fleet Log</a>
+      <a href="#" style="text-decoration:none">Signal Flags</a>
+      <button class="btn btn--primary">Cast Off</button>
+    </nav>
+
+    <header>
+      <div class="stripe-bar"></div>
+      <h1>Trim the sails, hold the course.</h1>
+      <p class="lede">Brass fittings, whipped rope, and a signal flag hoisted at every headline — the
+        Harborline Club runs its logbook the way a well-kept yacht runs its deck: crisp, navy, and true.</p>
+      <div class="rope-rule"></div>
+    </header>
+
+    <div class="row">
+      <button class="btn btn--primary">Log New Voyage</button>
+      <button class="btn">Read the Signal Book</button>
+      <button class="btn" disabled>Harbor Closed</button>
+      <span class="badge">⚓ Flag Code: Bravo</span>
+    </div>
+
+    <input class="input" placeholder="enter your vessel's name">
+
+    <div class="grid">
+      <article class="card">
+        <h3>Windward Watch</h3>
+        <p>Brass barometer readings logged each dawn, rope fenders re-whipped every season without fail.</p>
+      </article>
+      <article class="card">
+        <h3>Signal Flags</h3>
+        <p>A full set of international maritime flags, hand-stitched, hoisted for every club regatta.</p>
+      </article>
+    </div>
+  </div>
+</body>
+</html>
