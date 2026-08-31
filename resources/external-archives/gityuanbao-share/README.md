@@ -1,0 +1,73 @@
+# 源宝的开源仓库
+
+🌟Welcome to GIt源宝's open-source repository.🌟
+
+## AKShare 数据采集项目
+
+源码目录：[akshare_collector](./akshare_collector/)
+
+这是一个基于 AKShare 的量化数据采集项目，用于按模块采集 A 股、港股、期货、宏观经济、财经新闻、公司公告、行业板块和资金流等数据。
+
+- `main.py`：统一调度入口，可运行全部模块，也可指定单个模块运行。
+- `config.py`：配置采集时间范围、输出目录、日志目录、请求间隔和模块开关。
+- `modules/`：各类数据采集模块，包括股票行情、基本面、资金流、期货、港股、宏观、新闻、公告和行业板块。
+- `utils/`：目录创建、日志和通用辅助函数。
+
+运行方式：
+
+```bash
+cd akshare_collector
+pip install -r requirements.txt
+python main.py
+python main.py stock_daily
+```
+
+[AI辅助志愿填报-提示词收集-链接直达](https://xka17iu4p5.feishu.cn/docx/Gcj3dK4Cpoj40AxsDRzcZaIinB5?from=from_copylink)
+
+[AI换装/制作假名媛赚钱 comfyui & kontext 图文教程-链接直达](https://xka17iu4p5.feishu.cn/docx/Er8ddVrq7otf7WxU5xIcKSYRnec?from=from_copylink)
+
+[如何制作AI预制视频？图文教程-链接直达](https://xka17iu4p5.feishu.cn/docx/BUBDdOPjToShpKxHdsHcdGuEntg?from=from_copylink)
+
+[视频AI工作流是史吗？视频工作流图文教程-链接直达](https://xka17iu4p5.feishu.cn/docx/We22dQR1IokOlpxTtvnc9QN2nYg?from=from_copylink)
+
+[Nova Reel 视频生成图文教程 链接直达](https://xka17iu4p5.feishu.cn/docx/Z0l9dDdUwoaufJxORTacON0Lnqb?from=from_copylink)
+
+[马赛克居然被修复了？](./secret.md)
+
+[鉴定热门AI黑科技15-图文教程链接直达](https://xka17iu4p5.feishu.cn/docx/Zn6edmDtMoHlS0xK7Y8ch6y0n0c?from=from_copylink)
+
+[没钱做推广的冷门AI好用吗？AI工具大合集！](./AICollect.md)
+
+[鉴定热门AI黑科技14](./AIVideo.md)
+
+[鉴定热门AI黑科技13](./GeoSpy-memeVideo.md)
+
+[DeepSeek接入微信/AI客服/自动聊天机器人-资源教程合集](./AIChatBot.md)
+
+[《如何去除AI味?》](./How2DetectAIGC.md)
+
+[测试DeepSeek是否满血问题合集](./DeepSeek_Full_Capacity_Test.md)
+
+[《DeepSeek是被吹出来的？还是真的强？》视频参考资料](./DeepSeek_Hype_vs_Power.md)
+
+[《一口气学会AI短剧视频制作！》DiT技术参考论文](./DiT_Research_Papers.md)
+
+[《你的IP是如何泄露的？》引用链接](./How_Your_IP_Gets_Leaked.md)
+
+[《2025年必备四个AI神器推荐》工具链接](./Sci_Research_Tool.md)
+
+[《如何使⽤种⼦和磁⼒链接下载？》工具链接](./BT_Download.md)
+
+[《2024最有趣的计算机项目》资源链接](./Top_2024_CS_Projects.md)
+
+[《如何破解带有密码的压缩包？》资源链接](./how2crackZIP.md)
+
+[《老司机是如何下载网页视频的》资源链接](./how2download_video)
+
+[《你的脸，现在是我的了！手把手教你用DeepFaceLive》资源链接](./changeFace.md)
+
+---
+
+## 往期视频关键词回复资源
+
+[链接直达](./other.md)
