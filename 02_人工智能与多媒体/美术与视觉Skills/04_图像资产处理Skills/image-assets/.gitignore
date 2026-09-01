@@ -1,0 +1,13 @@
+# Local runtime caches created on first run — never commit these
+.venv/
+.node-deps/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+# Common ad-hoc output/test directories people create while trying the tool
+/output/
+/outputs/
+/cutouts/
+/assets/

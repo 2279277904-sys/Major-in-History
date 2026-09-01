@@ -1,0 +1,4 @@
+interface:
+  display_name: "Image Assets"
+  short_description: "Cut out, animate, resize, compress, and convert image assets"
+  default_prompt: "Use $image-assets to prepare app-ready image assets, including sprite-sheet cutouts, transparent GIF animation, sizes, compression, and manifest outputs."
