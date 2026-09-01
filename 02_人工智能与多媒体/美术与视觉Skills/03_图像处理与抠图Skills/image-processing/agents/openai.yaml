@@ -1,0 +1,4 @@
+interface:
+  display_name: "Image Processing"
+  short_description: "Local background removal and subject layout"
+  default_prompt: "Use $image-processing to remove this image background and fit the subject on a transparent canvas."

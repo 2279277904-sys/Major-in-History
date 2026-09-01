@@ -1,0 +1,58 @@
+# Local runtime and model cache
+image-processing/.venv/
+image-processing/.venv-*/
+image-processing/.models/
+.test-venv/
+
+# Python and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+test-results/
+
+# Manual and user acceptance images
+acceptance/
+acceptance-inputs/
+acceptance-outputs/
+samples-private/
+outputs/
+*.processed.png
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.bmp
+*.tif
+*.tiff
+*.heic
+*.pdf
+
+# Local models, environment files, and logs
+*.onnx
+.env
+.env.*
+*.log
+*.pem
+*.key
+*.pfx
+*.p12
+*.kdbx
+*.sqlite
+*.sqlite3
+*.db
+*.csv
+*.xls
+*.xlsx
+
+# Local agent and workspace state
+.codex/
+.agents/
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

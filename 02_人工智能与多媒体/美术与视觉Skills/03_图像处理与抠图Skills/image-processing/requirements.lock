@@ -1,0 +1,76 @@
+# Generated for Windows x64 CPython 3.12.
+# Every requirement is pinned to one compatible PyPI wheel SHA-256.
+# Regenerate from requirements.in before changing dependencies.
+
+attrs==26.1.0 \
+    --hash=sha256:c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309  # attrs-26.1.0-py3-none-any.whl
+certifi==2026.7.22 \
+    --hash=sha256:62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775  # certifi-2026.7.22-py3-none-any.whl
+charset-normalizer==3.5.1 \
+    --hash=sha256:3617ac3cfd8b9888f145ad89dd6e692285834b0201c6074a5eeaad3fd4d668c2  # charset_normalizer-3.5.1-cp312-cp312-win_amd64.whl
+colorama==0.4.6 \
+    --hash=sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6  # colorama-0.4.6-py2.py3-none-any.whl
+flatbuffers==25.12.19 \
+    --hash=sha256:7634f50c427838bb021c2d66a3d1168e9d199b0607e6329399f04846d42e20b4  # flatbuffers-25.12.19-py2.py3-none-any.whl
+idna==3.19 \
+    --hash=sha256:815e7be7a7806d54abb586dc943addc79e8b2ee16915059658cbeff4b1b43bf4  # idna-3.19-py3-none-any.whl
+imageio==2.37.4 \
+    --hash=sha256:1ab2e22c8debf700f24c3ac43e8f95f3b3a8110c83b93411e97b4b0b2cd1c7e6  # imageio-2.37.4-py3-none-any.whl
+iniconfig==2.3.0 \
+    --hash=sha256:f631c04d2c48c52b84d0d0549c99ff3859c98df65b3101406327ecc7d53fbf12  # iniconfig-2.3.0-py3-none-any.whl
+jsonschema==4.26.0 \
+    --hash=sha256:d489f15263b8d200f8387e64b4c3a75f06629559fb73deb8fdfb525f2dab50ce  # jsonschema-4.26.0-py3-none-any.whl
+jsonschema-specifications==2025.9.1 \
+    --hash=sha256:98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe  # jsonschema_specifications-2025.9.1-py3-none-any.whl
+lazy-loader==0.5 \
+    --hash=sha256:ab0ea149e9c554d4ffeeb21105ac60bed7f3b4fd69b1d2360a4add51b170b005  # lazy_loader-0.5-py3-none-any.whl
+llvmlite==0.49.0 \
+    --hash=sha256:3a9c9e3af4e214acfefa4f73ebe7bc3fb35854a62b654edb3953f5ae33c08ba3  # llvmlite-0.49.0-cp312-cp312-win_amd64.whl
+networkx==3.6.1 \
+    --hash=sha256:d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762  # networkx-3.6.1-py3-none-any.whl
+numba==0.67.0 \
+    --hash=sha256:50e2b72406c18cda5dd7431b0082cb85ea94e06c64c33607248fc8bef92cfb81  # numba-0.67.0-cp312-cp312-win_amd64.whl
+numpy==2.5.2 \
+    --hash=sha256:28ac63476ec7651484215ee7fa15a1f78b57c14621f01e392afe17b9a1390ce4  # numpy-2.5.2-cp312-cp312-win_amd64.whl
+onnxruntime==1.27.0 \
+    --hash=sha256:20c321cf187ba496e648acf6b4cf90b4d398b0d17c2a77fdaeba365b908cc1c1  # onnxruntime-1.27.0-cp312-cp312-win_amd64.whl
+packaging==26.3 \
+    --hash=sha256:d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c  # packaging-26.3-py3-none-any.whl
+pillow==12.3.0 \
+    --hash=sha256:a2b55dd6b2a4c4b7d87ffa56bdb33fdc5fdb9a462173861a7bc097f17d91cb09  # pillow-12.3.0-cp312-cp312-win_amd64.whl
+platformdirs==4.11.3 \
+    --hash=sha256:5ed065d443751de711da036041a7a214122efc4a4de393b3f4137ba5576540e7  # platformdirs-4.11.3-py3-none-any.whl
+pluggy==1.6.0 \
+    --hash=sha256:e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746  # pluggy-1.6.0-py3-none-any.whl
+pooch==1.9.0 \
+    --hash=sha256:f265597baa9f760d25ceb29d0beb8186c243d6607b0f60b83ecf14078dbc703b  # pooch-1.9.0-py3-none-any.whl
+protobuf==7.35.1 \
+    --hash=sha256:230a75ddfc2de4806e56696ce9640c1cdfdb6543b7cfce98d42a4c0a0e7bdb87  # protobuf-7.35.1-cp310-abi3-win_amd64.whl
+pygments==2.21.0 \
+    --hash=sha256:2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9  # pygments-2.21.0-py3-none-any.whl
+pymatting==1.1.15 \
+    --hash=sha256:1bd7f04651f1e02b390b88b84cf97c7f4c871ad8568945e4303746bf3ab48ecc  # pymatting-1.1.15-py3-none-any.whl
+pytest==9.1.1 \
+    --hash=sha256:37a86b45efb9a47a61a36449063e8e18d0cab3161329fc099eb21783169c4f0c  # pytest-9.1.1-py3-none-any.whl
+pyyaml==6.0.3 \
+    --hash=sha256:5fcd34e47f6e0b794d17de1b4ff496c00986e1c83f7ab2fb8fcfe9616ff7477b  # pyyaml-6.0.3-cp312-cp312-win_amd64.whl
+referencing==0.37.0 \
+    --hash=sha256:381329a9f99628c9069361716891d34ad94af76e461dcb0335825aecc7692231  # referencing-0.37.0-py3-none-any.whl
+rembg==2.0.77 \
+    --hash=sha256:27d5499214385a9255578a44d2db8bd0241d80ebf67aadb4109547ec49bfe71f  # rembg-2.0.77-py3-none-any.whl
+requests==2.34.2 \
+    --hash=sha256:2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0  # requests-2.34.2-py3-none-any.whl
+rpds-py==2026.6.3 \
+    --hash=sha256:2c958bf94822e9290a40aaf2a822d4bc5c88099093e3948ad6c571eca9272e5f  # rpds_py-2026.6.3-cp312-cp312-win_amd64.whl
+scikit-image==0.26.0 \
+    --hash=sha256:abed017474593cd3056ae0fe948d07d0747b27a085e92df5474f4955dd65aec0  # scikit_image-0.26.0-cp312-cp312-win_amd64.whl
+scipy==1.18.0 \
+    --hash=sha256:71ccc8faa2dd16ac310233203474a8b5cb67f10dedd54a3116d34943f4b19132  # scipy-1.18.0-cp312-cp312-win_amd64.whl
+tifffile==2026.8.16 \
+    --hash=sha256:a1263c59be7cba87af3c071542b66ae54ccbcb2768bc15b0ab67680641c7f685  # tifffile-2026.8.16-py3-none-any.whl
+tqdm==4.70.0 \
+    --hash=sha256:7f585706bfddbdebf89daac705b2dfcc16890130727d3197ca62c732b4310953  # tqdm-4.70.0-py3-none-any.whl
+typing-extensions==4.16.0 \
+    --hash=sha256:481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8  # typing_extensions-4.16.0-py3-none-any.whl
+urllib3==2.7.0 \
+    --hash=sha256:9fb4c81ebbb1ce9531cce37674bbc6f1360472bc18ca9a553ede278ef7276897  # urllib3-2.7.0-py3-none-any.whl

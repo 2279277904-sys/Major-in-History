@@ -1,0 +1,5 @@
+rembg[cpu]==2.0.77
+onnxruntime==1.27.0
+Pillow==12.3.0
+pytest==9.1.1
+PyYAML==6.0.3
